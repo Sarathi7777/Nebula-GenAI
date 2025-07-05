@@ -1,0 +1,18 @@
+# Vercel Environment Variables Template
+# Copy these to your Vercel project settings
+
+# API Configuration (Production)
+VITE_API_URL=https://nebula-genai.onrender.com
+VITE_PROXY_SERVER_URL=https://nebula-genai.onrender.com
+
+# MongoDB Configuration (Production)
+VITE_MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/Nebula GenAI
+
+# JWT Secret for Authentication (CHANGE THIS!)
+VITE_JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+
+# Hugging Face Token (optional)
+VITE_HF_TOKEN=your_hugging_face_token
+
+# Environment
+NODE_ENV=production 
