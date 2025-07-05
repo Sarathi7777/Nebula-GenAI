@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useMongoImages } from "@/hooks/useMongoImages";
 import { useNavigate } from "react-router-dom";
 import ImageConverter from "@/components/ImageConverter";
+import { getEnvironmentApiUrl } from "@/lib/config";
 
 const Generate = () => {
   const [prompt, setPrompt] = useState("");
@@ -88,9 +89,7 @@ const Generate = () => {
       toast.info("🎨 Generating photorealistic image with free AI...");
 
       // Use the proxy server for free Hugging Face Spaces integration
-      const apiUrl = import.meta.env.VITE_PROXY_SERVER_URL
-        ? `${import.meta.env.VITE_PROXY_SERVER_URL}/api/generate-image`
-        : 'http://localhost:3001/api/generate-image';
+      const apiUrl = getEnvironmentApiUrl('/api/generate-image');
 
       const response = await fetch(apiUrl, {
         method: "POST",

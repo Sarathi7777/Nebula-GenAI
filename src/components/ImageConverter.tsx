@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Upload, Download, Palette, Sparkles, Camera } from "lucide-react";
 import { toast } from "sonner";
+import { getEnvironmentApiUrl } from "@/lib/config";
 
 // AI-powered transformation examples for user guidance
 export const transformationExamples = [
@@ -117,9 +118,7 @@ export const transformImageWithAI = async (imageDataUrl: string, enhancedPrompt:
 
     // Use proxy server for Hugging Face Spaces API calls
     console.log('🔄 Using proxy server for Hugging Face Spaces API call...');
-    const apiUrl = import.meta.env.VITE_PROXY_SERVER_URL
-      ? `${import.meta.env.VITE_PROXY_SERVER_URL}/api/transform-image`
-      : 'http://localhost:3001/api/transform-image';
+    const apiUrl = getEnvironmentApiUrl('/api/transform-image');
 
     const response = await fetch(apiUrl, {
       method: 'POST',

@@ -1,4 +1,6 @@
-const API_URL = import.meta.env.VITE_API_URL;
+import { getApiUrl } from '../config';
+
+const API_URL = getApiUrl('');
 
 export interface ImageData {
   id: string;

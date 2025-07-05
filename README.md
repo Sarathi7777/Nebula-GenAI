@@ -165,6 +165,11 @@ VITE_JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 
 # API Configuration
 VITE_API_URL=http://localhost:3001
+VITE_API_URL_PROD=https://your-production-domain.com
+
+# Proxy Server Configuration (for Hugging Face Spaces)
+VITE_PROXY_SERVER_URL=http://localhost:3001
+VITE_PROXY_SERVER_URL_PROD=https://your-production-domain.com
 
 # Hugging Face Token (optional - for faster processing)
 VITE_HF_TOKEN=your_hugging_face_token
@@ -185,7 +190,19 @@ JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 
 # Hugging Face Configuration (optional)
 HF_TOKEN=your_hugging_face_token
+
+# CORS Configuration
+ALLOWED_ORIGINS=http://localhost:8080,http://localhost:8082,http://localhost:3000,http://localhost:5173
+ALLOWED_ORIGINS_PROD=https://your-frontend-domain.com,https://your-production-domain.com
 ```
+
+### 🚀 Production Deployment
+
+For production deployment, see the [DEPLOYMENT.md](./DEPLOYMENT.md) guide for detailed instructions on:
+- Setting up production environment variables
+- Deploying to platforms like Vercel, Render, and Railway
+- Configuring MongoDB Atlas
+- Security best practices
 
 ---
 
