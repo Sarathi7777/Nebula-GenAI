@@ -1,0 +1,35 @@
+{
+  "name": "imagemagic-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy server for Hugging Face Spaces API to handle CORS issues",
+  "main": "proxy-server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node proxy-server.js",
+    "dev": "nodemon proxy-server.js"
+  },
+  "dependencies": {
+    "@gradio/client": "^1.15.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "form-data": "^4.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "replicate",
+    "api",
+    "proxy",
+    "cors",
+    "ai",
+    "image-transformation"
+  ],
+  "author": "ImageMagic",
+  "license": "MIT"
+}
