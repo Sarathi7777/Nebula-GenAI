@@ -13,7 +13,7 @@
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-[Live Demo](https://image-magic-olive.vercel.app/) • [Documentation](#documentation) • [Contributing](#contributing)
+[Live Demo](https://nebula-genai.vercel.app) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
@@ -348,66 +348,6 @@ npm run test:watch
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions to Nebula GenAI! Here's how you can help:
-
-### Getting Started
-
-1. **Fork the Repository**
-   ```bash
-   git fork https://github.com/your-username/Nebula GenAI.git
-   ```
-
-2. **Create a Feature Branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-
-3. **Make Your Changes**
-   - Follow the existing code style
-   - Add TypeScript types for new features
-   - Update documentation as needed
-
-4. **Test Your Changes**
-   ```bash
-   npm run dev    # Test frontend
-   cd server && npm start  # Test server
-   ```
-
-5. **Commit Your Changes**
-   ```bash
-   git commit -m "Add amazing feature"
-   ```
-
-6. **Push to Your Fork**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-
-7. **Open a Pull Request**
-   - Describe your changes clearly
-   - Include screenshots for UI changes
-   - Reference any related issues
-
-### Contribution Guidelines
-
-- **Code Style**: Follow the existing TypeScript and React patterns
-- **Commits**: Use clear, descriptive commit messages
-- **Documentation**: Update README and code comments as needed
-- **Testing**: Ensure your changes don't break existing functionality
-
-### Areas for Contribution
-
-- 🎨 **UI/UX Improvements**: Enhance the user interface and experience
-- 🤖 **AI Integration**: Add new AI models or improve existing ones
-- 🔧 **Performance**: Optimize loading times and responsiveness
-- 📱 **Mobile**: Improve mobile experience and touch interactions
-- 🧪 **Testing**: Add unit tests and integration tests
-- 📚 **Documentation**: Improve guides and API documentation
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -436,8 +376,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Support & Contact
 
-- **Issues**: [GitHub Issues](https://github.com/sarathi7777/Nebula GenAI/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/sarathi7777/Nebula GenAI/discussions)
+- **Issues**: [GitHub Issues](https://github.com/sarathi7777/Nebula-GenAI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/sarathi7777/Nebula-GenAI/discussions)
 - **Email**: support@Nebula GenAI.dev (if applicable)
 
 ---
@@ -446,6 +386,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Made with ❤️ and ✨ AI Magic**
 
-[⭐ Star this repo](https://github.com/your-username/Nebula GenAI) • [🐛 Report Bug](https://github.com/your-username/ImageMagic/issues) • [💡 Request Feature](https://github.com/your-username/ImageMagic/issues)
+[⭐ Star this repo](https://github.com/sarathi7777/Nebula-GenAI) • [🐛 Report Bug]() • [💡 Request Feature]()
 
 </div>
