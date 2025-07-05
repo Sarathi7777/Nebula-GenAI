@@ -57,16 +57,25 @@ generatedImageSchema.index({ userId: 1, createdAt: -1 });
 
 const GeneratedImage = mongoose.model('GeneratedImage', generatedImageSchema);
 
+// CORS Configuration
+const getCorsOrigins = () => {
+  const allowedOrigins = process.env.ALLOWED_ORIGINS || 'http://localhost:8080,http://localhost:8082,http://localhost:3000,http://localhost:5173';
+  const allowedOriginsProd = process.env.ALLOWED_ORIGINS_PROD || '';
+  
+  let origins = allowedOrigins.split(',').map(origin => origin.trim());
+  
+  // Add production origins if in production environment
+  if (process.env.NODE_ENV === 'production' && allowedOriginsProd) {
+    const prodOrigins = allowedOriginsProd.split(',').map(origin => origin.trim());
+    origins = [...origins, ...prodOrigins];
+  }
+  
+  return origins;
+};
+
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:8080',
-    'http://localhost:8082',
-    'http://localhost:3000',
-    'http://localhost:5173',
-    // 'https://nebula-genai.vercel.app/',
-    // 'https://nebula-genai.onrender.com'
-  ],
+  origin: getCorsOrigins(),
   credentials: true
 }));
 
