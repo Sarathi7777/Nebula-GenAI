@@ -1,14 +1,14 @@
 // Environment-based configuration utility
 export const config = {
   // API Configuration
-  apiUrl: import.meta.env.VITE_API_URL || 'http://localhost:3001',
-  proxyServerUrl: import.meta.env.VITE_PROXY_SERVER_URL || 'http://localhost:3001',
+  apiUrl: import.meta.env.VITE_API_URL,
+  proxyServerUrl: import.meta.env.VITE_PROXY_SERVER_URL,
   
   // MongoDB Configuration
-  mongodbUri: import.meta.env.VITE_MONGODB_URI || 'mongodb://localhost:27017/Nebula GenAI',
+  mongodbUri: import.meta.env.VITE_MONGODB_URI,
   
   // JWT Configuration
-  jwtSecret: import.meta.env.VITE_JWT_SECRET || 'your-super-secret-jwt-key-change-this-in-production',
+  jwtSecret: import.meta.env.VITE_JWT_SECRET,
   
   // Hugging Face Configuration
   hfToken: import.meta.env.VITE_HF_TOKEN,

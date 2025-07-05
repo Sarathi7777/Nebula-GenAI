@@ -60,7 +60,7 @@ const GeneratedImage = mongoose.model('GeneratedImage', generatedImageSchema);
 // CORS Configuration
 const getCorsOrigins = () => {
   const allowedOrigins = process.env.ALLOWED_ORIGINS || 'http://localhost:8080,http://localhost:8082,http://localhost:3000,http://localhost:5173';
-  const allowedOriginsProd = process.env.ALLOWED_ORIGINS_PROD || '';
+  const allowedOriginsProd = process.env.ALLOWED_ORIGINS_PROD || 'https://nebula-genai.vercel.app/,https://nebula-genai.onrender.com';
   
   let origins = allowedOrigins.split(',').map(origin => origin.trim());
   
