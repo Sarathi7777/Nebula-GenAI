@@ -8,7 +8,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "ghibli-gradient text-primary-foreground hover:shadow-lg hover:shadow-ghibli-400/20",
+        default: "bg-gradient-to-r from-teal-600 to-teal-400 text-primary-foreground text-black hover:shadow-lg hover:shadow-ghibli-400/20",
         action: "actionhero-gradient text-primary-foreground hover:shadow-lg hover:shadow-actionhero-400/20",
         outline: "border border-ghibli-500 bg-transparent text-ghibli-700 hover:bg-ghibli-50",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",

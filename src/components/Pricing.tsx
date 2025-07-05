@@ -55,10 +55,10 @@ const Pricing = () => {
     <section id="pricing" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-400">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             Choose the plan that works best for your needs. No hidden fees or commitments.
           </p>
         </div>
@@ -67,7 +67,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div 
               key={index} 
-              className={`bg-white rounded-xl border ${plan.popular ? 'border-ghibli-500 shadow-lg shadow-ghibli-100' : 'border-gray-200'} overflow-hidden`}
+              className={`bg-white rounded-xl border ${plan.popular ? 'border-teal-500 shadow-lg shadow-teal-100' : 'border-teal-200'} overflow-hidden`}
             >
               {plan.popular && (
                 <div className="ghibli-gradient text-white text-center py-2 font-medium text-sm">
@@ -87,7 +87,7 @@ const Pricing = () => {
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <div className="flex-shrink-0">
-                        <Check className="h-5 w-5 text-ghibli-500" />
+                        <Check className="h-5 w-5 text-teal-500" />
                       </div>
                       <span className="ml-3 text-gray-600">{feature}</span>
                     </li>
@@ -105,9 +105,9 @@ const Pricing = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-400">
             All plans include 14-day money-back guarantee. Need a custom plan?
-            <a href="#" className="text-ghibli-600 font-medium ml-1">Contact us</a>
+            <a href="#" className="text-teal-400 font-medium ml-1">Contact us</a>
           </p>
         </div>
       </div>

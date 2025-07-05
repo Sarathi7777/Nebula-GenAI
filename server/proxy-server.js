@@ -64,8 +64,8 @@ app.use(cors({
     'http://localhost:8082',
     'http://localhost:3000',
     'http://localhost:5173',
-    // 'https://image-magic-olive.vercel.app',
-    // 'https://imagemagic-proxy-server.vercel.app'
+    'https://nebula-genai.vercel.app/',
+    'https://nebula-genai.onrender.com'
   ],
   credentials: true
 }));

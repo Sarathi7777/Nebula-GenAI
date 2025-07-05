@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative pt-24 pb-32 overflow-hidden bg-gradient-to-br from-white via-purple-50/30 to-blue-50/30">
+      <div className="relative pt-24 pb-32 overflow-hidden bg-black via-purple-50/30 to-blue-50/30">
         {/* Enhanced background decorations */}
         <div className="absolute inset-0 overflow-hidden -z-10">
           <div className="absolute -top-[40%] -left-[20%] w-[80%] h-[80%] rounded-full bg-gradient-to-r from-purple-200/40 to-purple-300/40 blur-3xl opacity-60 animate-pulse-slow"></div>
@@ -29,35 +29,35 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="text-center">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-full mb-8 shadow-sm">
-              <Sparkles className="h-4 w-4 text-purple-500 mr-2" />
+            <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-teal-500 rounded-full mb-8 shadow-sm">
+              <Sparkles className="h-4 w-4 text-yellow-500 mr-2" />
               <span className="text-sm font-medium text-gray-700">Powered by Advanced AI Technology</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8 leading-tight">
-              <span className="block mb-2">Create</span>
-              <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent inline-flex items-center gap-4">
-                Magical Images
-                <Zap className="h-12 w-12 md:h-16 md:w-16 text-blue-500 animate-pulse" />
+              <span className="block mb-2 text-teal-500">Create</span>
+              <span className="bg-gradient-to-r from-teal-600 to-emerald-400 bg-clip-text text-transparent inline-flex items-center gap-4 h-[125px]">
+                Incredible Images
+                <Zap className="h-12 w-12 md:h-16 md:w-16 text-teal-500 animate-pulse" />
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto mb-12 leading-relaxed">
               Transform your ideas into stunning high-definition artwork with our cutting-edge AI. 
               From photorealistic images to artistic masterpieces, create anything you can imagine.
             </p>
             
             {/* Feature highlights */}
             <div className="flex flex-wrap justify-center gap-6 mb-12">
-              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
-                <Palette className="h-4 w-4 text-purple-600" />
+              <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
+                <Palette className="h-4 w-4 text-teal-600" />
                 <span className="text-sm font-medium text-gray-700">HD Quality</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
+              <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
                 <Zap className="h-4 w-4 text-blue-600" />
                 <span className="text-sm font-medium text-gray-700">Lightning Fast</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
+              <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-white/40">
                 <Sparkles className="h-4 w-4 text-purple-600" />
                 <span className="text-sm font-medium text-gray-700">AI Powered</span>
               </div>
@@ -138,7 +138,7 @@ const Hero = () => {
                           "A magical forest with glowing flowers under starlight, digital art style"
                         </div>
                       </div>
-                      <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-xl p-4 text-center font-medium">
+                      <div className="bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-xl p-4 text-center font-medium">
                         ✨ Generating Magic...
                       </div>
                     </div>
@@ -178,27 +178,27 @@ const Hero = () => {
           {/* Feature showcase grid */}
           <div className="mt-32 grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-100 to-purple-200 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Zap className="h-8 w-8 text-purple-600" />
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-teal-100 to-teal-200 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Zap className="h-8 w-8 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">AI Generation</h3>
-              <p className="text-gray-600">Create stunning images from text descriptions using advanced AI models</p>
+              <h3 className="text-xl font-semibold mb-2 text-teal-400">AI Generation</h3>
+              <p className="text-gray-400">Create stunning images from text descriptions using advanced AI models</p>
             </div>
             
             <div className="text-center group">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-100 to-blue-200 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Palette className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Style Conversion</h3>
-              <p className="text-gray-600">Transform your photos with artistic filters and style effects</p>
+              <h3 className="text-xl font-semibold mb-2 text-blue-400">Style Conversion</h3>
+              <p className="text-gray-400">Transform your photos with artistic filters and style effects</p>
             </div>
             
             <div className="text-center group">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-100 to-blue-200 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Sparkles className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">HD Quality</h3>
-              <p className="text-gray-600">Professional-quality results with high-definition output</p>
+              <h3 className="text-xl font-semibold mb-2 text-purple-400">HD Quality</h3>
+              <p className="text-gray-400">Professional-quality results with high-definition output</p>
             </div>
           </div>
         </div>

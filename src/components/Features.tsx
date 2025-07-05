@@ -39,13 +39,13 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-gray-50">
+    <section id="features" className="py-20 bg-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Transform Images with Advanced AI
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-800 max-w-3xl mx-auto">
             Our platform uses cutting-edge AI models to transform your ordinary photos into extraordinary art.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Features = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               See the Magic in Action
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-800 max-w-3xl mx-auto">
               Check out these example transformations created with our AI technology.
             </p>
           </div>
@@ -113,7 +113,7 @@ const Features = () => {
                   
                   {/* Divider arrow */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white h-10 w-10 rounded-full shadow-lg flex items-center justify-center">
-                    <ArrowRight className="h-5 w-5 text-ghibli-600" />
+                    <ArrowRight className="h-5 w-5 text-teal-600" />
                   </div>
                 </div>
                 
@@ -121,13 +121,13 @@ const Features = () => {
                   <div className="flex justify-between items-center">
                     <div>
                       <h3 className="font-medium">{example.style} Transformation</h3>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-gray-700">
                         {example.style === "Ghibli Style"
                           ? "Anime art with soft colors & whimsical design"
                           : "Dramatic superhero style with bold colors"}
                       </p>
                     </div>
-                    <button className="text-sm font-medium text-ghibli-600 hover:text-ghibli-700">
+                    <button className="text-sm font-medium text-teal-600 hover:text-ghibli-700">
                       Try This Style
                     </button>
                   </div>

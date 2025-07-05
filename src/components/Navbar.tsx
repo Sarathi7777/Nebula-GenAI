@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/100 backdrop-blur-lg border-b border-teal-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0 flex items-center">
@@ -31,7 +31,7 @@ const Navbar = () => {
                   alt="ImageMagic Logo"
                   className="w-8 h-8"
                 />
-                <h1 className="text-2xl font-bold text-gradient">
+                <h1 className="text-2xl font-bold text-teal-400">
                   Nebula GenAI
                 </h1>
               </div>
@@ -42,21 +42,21 @@ const Navbar = () => {
               {isSignedIn && (
                 <button 
                   onClick={() => navigate('/generate')}
-                  className="text-gray-700 hover:text-ghibli-600 transition-colors"
+                  className="text-teal-400 hover:text-ghibli-600 transition-colors"
                 >
                   Generate
                 </button>
               )}
-              <a href="#features" className="text-gray-700 hover:text-ghibli-600 transition-colors">
+              <a href="#features" className="text-teal-400 hover:text-ghibli-600 transition-colors">
                 Features
               </a>
-              <a href="#examples" className="text-gray-700 hover:text-ghibli-600 transition-colors">
+              <a href="#examples" className="text-teal-400 hover:text-ghibli-600 transition-colors">
                 Examples
               </a>
-              <a href="#pricing" className="text-gray-700 hover:text-ghibli-600 transition-colors">
+              <a href="#pricing" className="text-teal-400 hover:text-ghibli-600 transition-colors">
                 Pricing
               </a>
-              <a href="#faq" className="text-gray-700 hover:text-ghibli-600 transition-colors">
+              <a href="#faq" className="text-teal-400 hover:text-ghibli-600 transition-colors">
                 FAQ
               </a>
             </div>
@@ -64,7 +64,10 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               {!isSignedIn ? (
                 <>
-                  <Button variant="ghost" onClick={() => setShowSignIn(true)}>
+                  {/* <Button variant="ghost" onClick={() => setShowSignIn(true)}>
+                    Log in
+                  </Button> */}
+                  <Button onClick={() => setShowSignIn(true)}>
                     Log in
                   </Button>
                   <GradientButton onClick={() => setShowSignUp(true)}>
@@ -80,7 +83,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-gray-900 hover:bg-gray-100"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <span className="sr-only">Open main menu</span>
@@ -92,7 +95,7 @@ const Navbar = () => {
         
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-b border-gray-200">
+          <div className="md:hidden bg-white border-b border-teal-200">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {isSignedIn && (
                 <button
@@ -137,8 +140,14 @@ const Navbar = () => {
             <div className="px-4 py-3 space-y-2">
               {!isSignedIn ? (
                 <>
-                  <Button 
+                  {/* <Button 
                     variant="ghost" 
+                    className="w-full justify-center"
+                    onClick={() => setShowSignIn(true)}
+                  >
+                    Log in
+                  </Button> */}
+                  <Button
                     className="w-full justify-center"
                     onClick={() => setShowSignIn(true)}
                   >
