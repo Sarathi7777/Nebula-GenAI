@@ -47,7 +47,7 @@ const SignUpModal = ({ isOpen, onClose, onSwitchToSignIn }: SignUpModalProps) =>
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="relative">
             <DialogHeader className="space-y-0">
-              <DialogTitle className="text-3xl font-bold text-center">Join ImageMagic!</DialogTitle>
+              <DialogTitle className="text-3xl font-bold text-center">Join Nebula GenAI!</DialogTitle>
               <p className="text-white/90 text-center mt-2">Create your account and start transforming images</p>
             </DialogHeader>
           </div>

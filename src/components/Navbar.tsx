@@ -32,7 +32,7 @@ const Navbar = () => {
                   className="w-8 h-8"
                 />
                 <h1 className="text-2xl font-bold text-gradient">
-                  ImageMagic
+                  Nebula GenAI
                 </h1>
               </div>
             </div>
