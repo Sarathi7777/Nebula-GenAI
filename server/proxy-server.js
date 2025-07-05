@@ -12,9 +12,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-key';
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://sara:admin@clustersih.6sysl.mongodb.net/Nebula-GenAI';
+const PORT = process.env.PORT;
+const JWT_SECRET = process.env.JWT_SECRET;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 console.log('🔗 Connecting to MongoDB:', MONGODB_URI);
 
