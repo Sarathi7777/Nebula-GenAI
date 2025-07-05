@@ -1,8 +1,8 @@
-# Nebula GenAI ✨
+# ImageMagic ✨
 
 <div align="center">
 
-![Nebula GenAI Logo](public/logo.svg)
+![ImageMagic Logo](public/logo.svg)
 
 **AI-Powered Image Generation & Transformation Platform**
 
@@ -21,9 +21,9 @@
 
 ## 🎯 Project Overview
 
-Nebula GenAI is a cutting-edge web application that harnesses the power of artificial intelligence to revolutionize image creation and transformation. Built with modern web technologies, it provides users with professional-quality AI tools for generating stunning images from text prompts and transforming existing images into various artistic styles.
+ImageMagic is a cutting-edge web application that harnesses the power of artificial intelligence to revolutionize image creation and transformation. Built with modern web technologies, it provides users with professional-quality AI tools for generating stunning images from text prompts and transforming existing images into various artistic styles.
 
-### 🌟 What Makes Nebula GenAI Special
+### 🌟 What Makes ImageMagic Special
 
 - **100% Free AI Processing**: Leverages Hugging Face Spaces for completely free AI image generation and transformations
 - **No API Keys Required**: No billing setup or payment information needed
@@ -97,8 +97,8 @@ Transform your images into stunning artistic styles:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/midlaj-muhammed/Nebula-GenAI.git
-   cd Nebula-GenAI
+   git clone https://github.com/midlaj-muhammed/ImageMagic.git
+   cd ImageMagic
    ```
 
 2. **Install Frontend Dependencies**
@@ -157,8 +157,8 @@ Create `.env` files for enhanced functionality:
 **Frontend (.env):**
 ```env
 # MongoDB Configuration
-VITE_MONGODB_URI=mongodb://localhost:27017/Nebula GenAI
-VITE_MONGODB_URI_PROD=mongodb+srv://username:password@cluster.mongodb.net/Nebula GenAI
+VITE_MONGODB_URI=mongodb://localhost:27017/imagemagic
+VITE_MONGODB_URI_PROD=mongodb+srv://username:password@cluster.mongodb.net/imagemagic
 
 # JWT Secret for Authentication
 VITE_JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
@@ -177,8 +177,8 @@ PORT=3001
 NODE_ENV=development
 
 # MongoDB Configuration
-MONGODB_URI=mongodb://localhost:27017/Nebula GenAI
-MONGODB_URI_PROD=mongodb+srv://username:password@cluster.mongodb.net/Nebula GenAI
+MONGODB_URI=mongodb://localhost:27017/imagemagic
+MONGODB_URI_PROD=mongodb+srv://username:password@cluster.mongodb.net/imagemagic
 
 # JWT Secret for Authentication
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
@@ -222,7 +222,7 @@ HF_TOKEN=your_hugging_face_token
 
 ### Hugging Face Spaces Integration
 
-Nebula GenAI leverages **Hugging Face Spaces** for completely free AI processing:
+ImageMagic leverages **Hugging Face Spaces** for completely free AI processing:
 
 - **Image Generation**: `black-forest-labs/FLUX.1-schnell` space for AI image creation
 - **Image Transformation**: `Hexii/Neural-Style-Transfer` space for style transfer
@@ -252,9 +252,9 @@ The AI can handle various artistic styles through natural language prompts:
 ## 📁 Project Structure
 
 ```
-Nebula GenAI/
+ImageMagic/
 ├── public/                 # Static assets
-│   ├── logo.svg           # Nebula GenAI logo
+│   ├── logo.svg           # ImageMagic logo
 │   ├── favicon.svg        # Favicon
 │   └── images/            # Demo images and assets
 ├── src/                   # Source code
@@ -289,7 +289,7 @@ Nebula GenAI/
 - **`src/pages/`**: Main application pages and routing
 - **`server/`**: Express.js proxy server for AI API integration
 - **`public/`**: Static assets including logos and demo images
-- **`tailwind.config.ts`**: Custom Tailwind CSS configuration with Nebula GenAI brand colors
+- **`tailwind.config.ts`**: Custom Tailwind CSS configuration with ImageMagic brand colors
 
 ---
 
@@ -333,13 +333,13 @@ npm run test:watch
 
 ## 🤝 Contributing
 
-We welcome contributions to Nebula GenAI! Here's how you can help:
+We welcome contributions to ImageMagic! Here's how you can help:
 
 ### Getting Started
 
 1. **Fork the Repository**
    ```bash
-   git fork https://github.com/your-username/Nebula-GenAI.git
+   git fork https://github.com/your-username/ImageMagic.git
    ```
 
 2. **Create a Feature Branch**
@@ -397,7 +397,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### MIT License Summary
 
-- ✅ **Commercial Use**: Use Nebula GenAI in commercial projects
+- ✅ **Commercial Use**: Use ImageMagic in commercial projects
 - ✅ **Modification**: Modify and adapt the code
 - ✅ **Distribution**: Share and distribute the software
 - ✅ **Private Use**: Use for personal projects
