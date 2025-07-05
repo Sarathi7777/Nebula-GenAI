@@ -81,7 +81,7 @@ const Generate = () => {
     setShowSuccessMessage(false); // Clear any previous success message
 
     // Function to attempt image generation with retries for startup
-    const attemptGeneration = async (retryCount = 0): Promise<any> => {
+    const attemptGeneration = async (retryCount = 0): Promise<{ success: boolean; imageUrl?: string; error?: string }> => {
       try {
         // Enhance the prompt for photorealism
         const enhancedPrompt = enhancePromptForPhotorealism(prompt);
@@ -128,7 +128,7 @@ const Generate = () => {
         }
       }
 
-        const result = await response.json();
+                const result = await response.json();
         return result; // Return the result for the main function to handle
       } catch (error) {
         // If it's a startup error and we haven't exceeded retries, it will be handled above

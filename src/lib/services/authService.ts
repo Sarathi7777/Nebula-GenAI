@@ -15,7 +15,7 @@ export interface LoginResponse {
 }
 
 // Simple JWT decoder for client-side use
-function decodeJWT(token: string): any {
+function decodeJWT(token: string): { userId: string; email: string; name?: string; avatar?: string } {
   try {
     const base64Url = token.split('.')[1];
     const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');

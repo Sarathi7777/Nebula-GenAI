@@ -59,8 +59,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setUser(response.user);
       localStorage.setItem('authToken', response.token);
       toast.success('Successfully signed in!');
-    } catch (error: any) {
-      toast.error(error.message || 'Failed to sign in');
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Failed to sign in';
+      toast.error(errorMessage);
       throw error;
     }
   };
@@ -71,8 +72,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setUser(response.user);
       localStorage.setItem('authToken', response.token);
       toast.success('Account created successfully!');
-    } catch (error: any) {
-      toast.error(error.message || 'Failed to create account');
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Failed to create account';
+      toast.error(errorMessage);
       throw error;
     }
   };
@@ -82,8 +84,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setUser(null);
       localStorage.removeItem('authToken');
       toast.success('Successfully signed out');
-    } catch (error: any) {
-      toast.error(error.message || 'Failed to sign out');
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : 'Failed to sign out';
+      toast.error(errorMessage);
     }
   };
 
