@@ -1,6 +1,6 @@
-# Contributing to ImageMagic ✨
+# Contributing to Nebula GenAI ✨
 
-Thank you for your interest in contributing to ImageMagic! We welcome contributions from developers of all skill levels.
+Thank you for your interest in contributing to Nebula GenAI! We welcome contributions from developers of all skill levels.
 
 ## 🚀 Quick Start
 
@@ -22,8 +22,8 @@ Thank you for your interest in contributing to ImageMagic! We welcome contributi
 ### Local Development
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/ImageMagic.git
-cd ImageMagic
+git clone https://github.com/your-username/Nebula GenAI.git
+cd Nebula GenAI
 
 # Install frontend dependencies
 npm install
@@ -85,7 +85,7 @@ npm run dev
 - Use Tailwind CSS utility classes
 - Follow mobile-first responsive design
 - Maintain consistent spacing and colors
-- Use ImageMagic brand colors from the config
+- Use Nebula GenAI brand colors from the config
 
 ### File Organization
 - Keep components small and focused
@@ -175,7 +175,7 @@ Include any console error messages
 
 ### Before Requesting
 1. **Check existing issues** for similar requests
-2. **Consider the scope** - does it fit ImageMagic's goals?
+2. **Consider the scope** - does it fit Nebula GenAI's goals?
 3. **Think about implementation** - is it technically feasible?
 
 ### Feature Request Template
@@ -248,4 +248,4 @@ Any other relevant information
 - **Code Review**: Request reviews on your PRs
 - **Documentation**: Check the README and code comments
 
-Thank you for contributing to ImageMagic! 🎨✨
+Thank you for contributing to Nebula GenAI! 🎨✨
