@@ -97,7 +97,7 @@ Transform your images into stunning artistic styles:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/midlaj-muhammed/ImageMagic.git
+   git clone https://github.com/Sarathi7777/Nebula-GenAI.git
    cd Nebula-GenAI
    ```
 
